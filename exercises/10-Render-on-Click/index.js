@@ -1,5 +1,8 @@
 let button = document.querySelector("#superDuperButton");
 button.addEventListener("click", function() {
-	//your code here
+	thediv = document.createElement("div")
+	thediv.style.backgroundColor = 'yellow'
+	thediv.innerHTML = 'Hello World'
+	document.body.append(thediv)
 	
 });
