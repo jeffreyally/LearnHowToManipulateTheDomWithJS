@@ -1,7 +1,9 @@
- 
-
-
-//e.path[0].value
+listofspans = document.querySelectorAll(".fa.fa-trash")
+listofspans.forEach((span)=>{
+span.addEventListener("click",() =>
+    span.parentNode.parentNode.remove()
+)
+})
 
 
 document.querySelector('#addToDo').addEventListener("change",(e)=>{
@@ -15,16 +17,6 @@ document.querySelector('#addToDo').addEventListener("change",(e)=>{
         span.parentNode.parentNode.remove()
     )
 })
+  
 })
 
-
-
-
-
-
-
-
-
-
-
-//lifesaver on how to find FA icons: https://stackoverflow.com/questions/51351679/how-do-i-color-a-fontawesome-icon-with-javascript

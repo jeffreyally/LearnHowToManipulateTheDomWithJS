@@ -4,14 +4,14 @@ for(country of listofcountries){
     
     var option = document.createElement("option");  
     option.text = country;
-    option.setAttribute("class", country);
+    //option.setAttribute("class", country)???;
     document.querySelector('#mySelect').add(option);
 }
 
 document.querySelector('#mySelect').addEventListener("change",(e)=>{
     dropdownOfCountries = document.querySelector('#mySelect')
     alert(`${dropdownOfCountries[dropdownOfCountries.selectedIndex].innerHTML}`)
-    
+    console.log(e.target.value)
 })
 //This link was a lifesaver: https://www.w3schools.com/jsref/coll_select_options.asp
 //This can be done in one line like so...alert(`${document.querySelector('#mySelect')[document.querySelector('#mySelect').selectedIndex].innerHTML}`)
